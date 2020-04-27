@@ -1,11 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define  CIN            ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 #define  ll             long long int
-#define  pb             push_back
-#define  pii            pair < ll, ll>
-#define  ff             first
-#define  ss             second
 ll ara[200005];
 
 ll LIS(ll n)
@@ -35,12 +30,9 @@ ll LIS(ll n)
     cout<<endl;
     return sz ;
 }
-
-
 int main()
 {
-    CIN;
-    ll a , b , i , j ;
+    ll a , i;
     cin >> a ;
     for( i = 0 ; i < a ; i++) cin >> ara[i];
     cout<<LIS(a)<<endl;
