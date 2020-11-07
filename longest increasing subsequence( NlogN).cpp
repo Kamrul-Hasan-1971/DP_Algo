@@ -11,13 +11,13 @@ ll Fun()
 
     for(ll i = 1; i < v1.size(); i++)
     {
-        if( v2.back() <= v1[ i ] )
+        if( v2.back() <= v1[ i ] ) //  "<" for strictly increasing sequence
         {
             v2.push_back( v1[ i ] ) ;
         }
         else
         {
-            ll pos =  upper_bound( v2.begin(),v2.end(), v1[ i ] )-v2.begin() ;
+            ll pos =  upper_bound( v2.begin(),v2.end(), v1[ i ] )-v2.begin() ;//lower_bound for strictly increasing sequence
             v2[ pos ] = v1[ i ] ;
         }
     }
