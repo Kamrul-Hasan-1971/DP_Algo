@@ -1,3 +1,6 @@
+//Time complexity : subsetSum * number of elements in the array
+//Space Complexity : subsetSum
+
 bool subsetSum(vector<int>& nums, subsetSum) {
   vector<bool>dp(subsetSum + 1 , false);
   dp[0] = true;
